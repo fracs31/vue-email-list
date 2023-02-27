@@ -13,7 +13,13 @@
 <body>
     <!-- Vue -->
     <div id="app">
-        
+        <!-- Lista -->
+        <ul>
+            <!-- Elemento della lista -->
+            <li v-for="(email) in emails">
+                {{ email }}
+            </li>
+        </ul>
     </div>
     <!-- JavaScript -->
     <script src="./js/app.js"></script>
