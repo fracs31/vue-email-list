@@ -14,12 +14,16 @@
     <!-- Vue -->
     <div id="app">
         <!-- Lista -->
-        <ul>
+        <ul v-if="emails.length === 10">
             <!-- Elemento della lista -->
             <li v-for="(email) in emails">
                 {{ email }}
             </li>
         </ul>
+        <!-- Messaggio -->
+        <div v-else>
+            Sto generando le email...
+        </div>
     </div>
     <!-- JavaScript -->
     <script src="./js/app.js"></script>
